@@ -11,6 +11,7 @@ export default function Contact() {
   });
   const [errors, setErrors] = useState<any>({});
   const [submitted, setSubmitted] = useState(false);
+  const [Loading, setLoading] = useState(false);
   const validateForm = () => {
     let temp: any = {};
     if (!form.name.trim()) temp.name = "Name is required.";
@@ -25,13 +26,31 @@ export default function Contact() {
     return Object.keys(temp).length === 0;
   };
 
-  const handleSubmit = (e: any) => {
+const handleSubmit = async (e: any) => {
     e.preventDefault();
-    if (validateForm()) {
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 3000);
-      setForm({ name: "", email: "", message: "", robot: false });
-      setErrors({});
+    if (!validateForm()) return;
+    try {
+      setLoading(true);
+      const res = await fetch("/api/resend", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+        setForm({ name: "", email: "", message: "", robot: false });
+        setErrors({});
+        setTimeout(() => setSubmitted(false), 3000);
+      } else {
+        alert("Failed to send message");
+      }
+    } catch (err) {
+      alert("Something went wrong");
+    } finally {
+      setLoading(false);
     }
   };
 

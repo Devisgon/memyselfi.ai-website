@@ -117,7 +117,7 @@ export default function HeroSection() {
             alt="Unified Inbox"
             width={500}
             height={500}
-            className="object-contain max-md:w-[450px] max-sm:w-[320px]" />
+            className="object-contain mt-4 max-md:w-[450px] max-sm:w-[320px]" />
         </div>
         <div className="space-y-2 max-md:text-center md:text-left">
           <SlideUp>
