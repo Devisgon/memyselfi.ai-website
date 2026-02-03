@@ -6,7 +6,7 @@ export async function POST(req: Request) {
     const data = await resend.emails.send({
       from: process.env.RESEND_DOMAIN!,
       to: [process.env.RESEND_EMAIL_USER!], 
-      replyTo: email, 
+      reply_to: email,
       subject: `New Inquiry from meMyself.ai`,
       html: `
         <h2></h2>
