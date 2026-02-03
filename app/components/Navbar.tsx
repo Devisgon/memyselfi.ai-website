@@ -165,7 +165,7 @@ const isMobileActive = (path: string) => pathname === path;
 
           <Link
             href="/login"
-            className="px-4 py-1 rounded-lg text-base transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="px-4 py-1 rounded-lg text-base transition-colors duration-200 hover:border-2 hover:border-[#FFED29]"
           >
             Log In
           </Link>
