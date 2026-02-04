@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { SlideUp } from "@/app/components/Animations";
+import { Hovering, SlideUp } from "@/app/components/Animations";
 import { useTheme } from "@/app/components/ThemeProvider";
 export default function HeroSection() {
   const { theme } = useTheme();
@@ -45,9 +45,11 @@ export default function HeroSection() {
           Let your AI Assistant handle the thinking, organizing, and reminding so you
           can focus on what truly matters — whether it’s your personal life or your business.
         </p>
-        <button className="mt-4 mb-[70px] sm:mt-6 px-6 sm:px-8 py-2 sm:py-3 rounded-xl bg-[#FFEF43] text-black font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+       <Hovering> <a href="https://app.memyselfi.ai/signup" target="blank">
+        <button className="mt-4 mb-[70px] cursor-pointer sm:mt-6 px-6 sm:px-8 py-2 sm:py-3 rounded-xl bg-[#FFEF43] text-black font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
           Get Started
         </button>
+        </a></Hovering>
       </div>
     </section>
   );

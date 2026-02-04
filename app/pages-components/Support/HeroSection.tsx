@@ -27,9 +27,9 @@ export default function HeroSection() {
                         style={{ fontFamily: "Inter, sans-serif" }} >
                         MeMyselfI.ai offers 24/7 smart assistance for your daily productivity,scheduling, and communication needs, backed by a support system built to help you succeed.
                     </p></SlideRight>
-                    <SlideUp> <Hovering><button className=" w-fit px-6 py-3 rounded-md  bg-[#FFED29] text-black   font-semibold text-sm hover:opacity-90 transition " >
+                    <SlideUp> <Hovering><a href="https://app.memyselfi.ai/signup" target="blank"><button className=" w-fit px-6 py-3 rounded-md  bg-[#FFED29] text-black   font-semibold text-sm hover:opacity-90 transition " >
                         Get Started
-                    </button></Hovering>   </SlideUp>
+                    </button></a></Hovering>   </SlideUp>
                 </div>
             </div>
             {/* FEATURES ROW */}
@@ -49,7 +49,7 @@ export default function HeroSection() {
       { icon: <FiMic size={22} />, text: "Voice-activated assistance" },
     ].map((item, i) => (
       <div key={i}
-        className="w-[258px] h-[95px] flex items-center gap-3 px-4 bg-[#1A1A1A] rounded-lg">
+        className="w-[258px] h-[95px] flex items-center gap-3 hover:-translate-y-4 duration-300 px-4 bg-[#1A1A1A] rounded-lg">
 <SlideLeft><span className="text-(--text-primary)">{item.icon}</span></SlideLeft>        
  <SlideRight> <p className="text-[14px] font-medium text-white leading-snug"
           style={{ fontFamily: "Inter, sans-serif" }} >

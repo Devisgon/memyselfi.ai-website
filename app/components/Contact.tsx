@@ -82,11 +82,12 @@ const handleSubmit = async (e: any) => {
                   placeholder="Name"
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className={`w-full p-3 rounded-lg bg-primaryBg border ${
+                  className={`w-full p-3 rounded-lg bg-primaryBg border  placeholder-gray-500 text-textPrimary
+                     ${
                     errors.name
                       ? "border-red-500"
                       : "border-gray-300 focus:border-buttonBg"
-                  } text-textPrimary focus:outline-none focus:ring-2 focus:ring-buttonBg`}
+                  }  focus:outline-none focus:ring-2 focus:ring-buttonBg`}
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -100,7 +101,7 @@ const handleSubmit = async (e: any) => {
                   placeholder="Email"
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className={`w-full p-3 rounded-lg bg-primaryBg border ${
+                  className={`w-full p-3 rounded-lg bg-primaryBg border  placeholder-gray-500 ${
                     errors.email
                       ? "border-red-500"
                       : "border-gray-300 focus:border-buttonBg"
@@ -117,7 +118,7 @@ const handleSubmit = async (e: any) => {
                   placeholder="Message"
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className={`w-full p-3 h-32 rounded-lg bg-primaryBg border ${
+                  className={`w-full p-3 h-32 rounded-lg bg-primaryBg border  placeholder-gray-500 ${
                     errors.message
                       ? "border-red-500"
                       : "border-gray-300 focus:border-buttonBg"

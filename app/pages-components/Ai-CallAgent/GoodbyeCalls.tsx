@@ -1,4 +1,7 @@
 "use client";
+
+import { Hovering } from "@/app/components/Animations";
+
 const GoodbyeCalls = () => {
   return (
     <section className="w-full py-16 sm:py-20 px-4 sm:px-6 md:px-6 lg:px-6 bg-[#FFDD57]/20 dark:bg-[#FFD93D]/20">
@@ -9,9 +12,12 @@ const GoodbyeCalls = () => {
         <p className="text-base sm:text-lg mb-8">
           Set up your AI Call Agent in under 5 minutes
         </p>
-        <button className="bg-(--bg-button) text-black px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-medium shadow hover:scale-105 transition-all">
+        <Hovering>        <a href="https://app.memyselfi.ai/signup" target="blank">
+
+        <button className="bg-(--bg-button) cursor-pointer text-black px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-medium shadow hover:scale-105 transition-all">
           Get Started
-        </button>
+        </button></a>
+        </Hovering>
       </div>
     </section>
   );

@@ -18,15 +18,15 @@ export const ControlYourLife = () => {
 
        {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-       <Hovering> <button className=" px-6 py-3 rounded-md  bg-[#FFED29] text-[#000000] border border-[#1F2228] font-bold font-inter  hover:opacity-90 transition">
+       <Hovering><a href="https://app.memyselfi.ai/signup" target="blank"> <button className=" cursor-pointer px-6 py-3 rounded-md  bg-[#FFED29] text-[#000000] border border-[#1F2228] font-bold font-inter  hover:opacity-90 transition">
             Get Started
-          </button>
+          </button></a>
 </Hovering>
           {/* Contact Us */}
           <Hovering>
-          <button className=" px-6 py-3 rounded-md  bg-transparent  text-[#FFFFFF] border border-[#FFFFFF] dark:text-[#FFED29] dark:border-[#FFED29]  font-semibold font-inter">
+         <a href="#contact"> <button className=" cursor-pointer px-6 py-3 rounded-md  bg-transparent  text-[#FFFFFF] border border-[#FFFFFF] dark:text-[#FFED29] dark:border-[#FFED29]  font-semibold font-inter">
             Contact Us
-          </button></Hovering>
+          </button> </a></Hovering>
       </div>
       </div>
     </section>

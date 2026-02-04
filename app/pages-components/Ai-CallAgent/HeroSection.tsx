@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { FC } from "react";
-import { SlideLeft, SlideRight, SlideUp } from "@/app/components/Animations";
+import { Hovering, SlideLeft, SlideRight, SlideUp } from "@/app/components/Animations";
 export const HeroSection: FC = () => {
   return (
     <section
@@ -37,15 +37,16 @@ export const HeroSection: FC = () => {
                 knowledge training to suit your specific needs.
               </p>
             </SlideRight>
-            <SlideUp>
+            <SlideUp><Hovering>        <a href="https://app.memyselfi.ai/signup" target="blank">
+
               <div
-                className="inline-block px-4 py-2 rounded-lg shadow-[0_0_20px_var(--bg-button)] mb-4 relative"
+                className="inline-block px-4 cursor-pointer py-2 rounded-lg shadow-[0_0_20px_var(--bg-button)] mb-4 relative"
                 style={{
                   background: "var(--bg-button)",
                 }}
               >
                 <span className="font-semibold text-black">GET STARTED</span>
-              </div>
+              </div></a></Hovering>
             </SlideUp>
           </div>
           <SlideRight> <div className="flex-1 relative flex justify-center w-full max-w-[500px]">

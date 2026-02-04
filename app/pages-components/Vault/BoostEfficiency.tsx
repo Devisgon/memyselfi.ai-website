@@ -1,4 +1,5 @@
 "use client";
+import { Hovering } from "@/app/components/Animations";
 import Image from "next/image";
 export default function BoostEfficiency() {
   return (
@@ -51,13 +52,14 @@ export default function BoostEfficiency() {
                 fontWeight: 400,
               }} >
 Start using Vault today to streamline your document<br/> management and enhance your productivity.
-            </p>
+            </p><Hovering>        <a href="https://app.memyselfi.ai/signup" target="blank">
+
             <button
-              className="mt-2 w-fit px-6 py-2 rounded-full bg-[#FFEF43]
+              className="mt-2 cursor-pointer w-fit px-6 py-2 rounded-full bg-[#FFEF43]
               text-black text-bold font-medium text-sm hover:opacity-90 transition"
               style={{ fontFamily: "Inter, sans-serif" }} >
               Get Started
-            </button>
+            </button></a></Hovering>
           </div>
         </div>
       </div>

@@ -169,14 +169,14 @@ export default function HeroSection() {
           </div>
             </div>
             <Hovering>
-              <button
+             <a href="https://app.memyselfi.ai/signup" target="blank"> <button
                 className="px-6 py-2 text-[16px] rounded-lg font-semibold w-[159px] h-[74px] md:w-auto"
                 style={{
                   backgroundColor: "#FFED29",
                   color: "#000000",
                 }}>
                 Get Started!
-              </button>
+              </button></a>
             </Hovering>
           </div>
         </div>

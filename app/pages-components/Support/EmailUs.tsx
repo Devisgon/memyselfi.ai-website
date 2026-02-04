@@ -23,9 +23,9 @@ export default function EmailUsDirectly() {
                         style={{ fontFamily: "Inter, sans-serif" }} >
                     Have a specific question or need personalized assistance? Feel free to reach out to us via email for detailed inquiries, feedback, or support requests. Our team is ready to help you with anything related to your MeMyselfI.ai experience, from troubleshooting to tailored guidance.<span className="font-bold"> We're just one message away!</span>
                     </p></SlideRight>
-                    <SlideUp> <Hovering><button className=" w-fit px-6 py-3 rounded-md  bg-[#FFED29] text-black   font-semibold text-sm hover:opacity-90 transition " >
+                    <SlideUp> <Hovering><a href="#support"><button className=" w-fit px-6 py-3 rounded-md  bg-[#FFED29] text-black   font-semibold text-sm hover:opacity-90 transition " >
                         Talk to Support
-                    </button></Hovering>  </SlideUp>
+                    </button></a></Hovering>  </SlideUp>
                 </div>
       </div>
     </section>);}

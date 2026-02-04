@@ -59,7 +59,7 @@ export const DontWorrySection: FC = () => {
             return (
             <SlideUp key={i}>
   <div
-    className="rounded-2xl overflow-hidden relative w-[349px] h-64 sm:h-60 md:h-64"
+    className="rounded-2xl overflow-hidden relative hover:-translate-y-6 duration-500 w-[349px] h-64 sm:h-60 md:h-64"
     style={{
       backgroundImage: `url(${item.bg})`,
       backgroundSize: "cover",

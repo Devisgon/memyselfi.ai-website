@@ -14,9 +14,9 @@ export default function LiveChatAssistant() {
                         style={{ fontFamily: "Inter, sans-serif" }} >
                        Need help navigating your day or solving a task? Our AI assistant is always by your side, ready to provide instant answers, manage your calendar, reply to messages, and more. Whether it’s a quick fix or a detailed walkthrough, MeMyself.ai makes support feel seamless and personal.
                     </p></SlideRight>
-                    <SlideUp>       <button className=" w-fit px-6 py-3 rounded-md  bg-[#FFED29] text-black   font-semibold text-sm hover:opacity-90 transition " >
+                    <Hovering>  <a href="#support">     <button className=" w-fit px-6 py-3 rounded-md  bg-[#FFED29] text-black   font-semibold text-sm hover:opacity-90 transition " >
                         Talk to Support
-                    </button></SlideUp>
+                    </button></a></Hovering>
                 </div>
         <div className="shrink-0">
           <Image

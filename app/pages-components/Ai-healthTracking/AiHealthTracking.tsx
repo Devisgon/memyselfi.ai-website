@@ -1,5 +1,5 @@
 "use client";
-import { SlideUp } from "@/app/components/Animations";
+import { Hovering, SlideUp } from "@/app/components/Animations";
 import { IoIosLock } from "react-icons/io";
 
 export default function AIHealthTracking() {
@@ -17,12 +17,12 @@ export default function AIHealthTracking() {
         </div>
 
         {/* BADGE */}
-        <SlideUp>
+        <SlideUp><Hovering>
           <div className="px-4 py-2 bg-[#FFEF43] mb-4 rounded-md w-40 sm:w-[170px] h-[37px] flex items-center justify-center mx-auto">
             <p className="text-black font-semibold text-xs sm:text-sm tracking-wide">
               Health Tracking
             </p>
-          </div>
+          </div></Hovering>
         </SlideUp>
 
         {/* TITLE */}
