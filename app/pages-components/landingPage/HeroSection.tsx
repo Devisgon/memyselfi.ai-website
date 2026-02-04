@@ -50,18 +50,24 @@ export const HeroSection: FC = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 mb-8">
           {/* LEFT BUTTON */}
           <SlideLeft>
-          <Hovering><button
-                className=" px-6 py-3  w-full sm:w-auto  font-medium rounded-lg  transition-colors duration-300 bg-(--bg-button) text-black ">
+          <Hovering>
+           <a href="https://app.memyselfi.ai/signup" target="blank  ">
+
+            <button
+                className=" px-6 py-3 cursor-pointer w-full sm:w-auto  font-medium rounded-lg  transition-colors duration-300 bg-(--bg-button) text-black ">
                 Create Account
-              </button></Hovering>
+              </button></a></Hovering>
           </SlideLeft>
 
           {/* RIGHT BUTTON */}
           <SlideRight>
-           <Hovering>  <button
-                className="px-6 py-3 w-full sm:w-auto font-medium rounded-lg text-[#FFFFFF] border border-[#FFFFFF] bg-transparent transition-colors duration-300">
+           <Hovering> 
+            <a href="https://app.memyselfi.ai/signup" target="blank  ">
+ <button
+                className="px-6 py-3 cursor-pointer w-full sm:w-auto font-medium rounded-lg text-[#FFFFFF] border border-[#FFFFFF] bg-transparent transition-colors duration-300">
                 Start a 14 Day Free Trial
-              </button></Hovering> 
+              </button></a>
+              </Hovering> 
           </SlideRight>
         </div>
       </div>

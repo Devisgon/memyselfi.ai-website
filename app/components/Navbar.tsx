@@ -164,16 +164,15 @@ const isMobileActive = (path: string) => pathname === path;
           </button>
 
           <Link
-            href="/login"
-            className="px-4 py-1 rounded-lg text-base transition-colors duration-200 hover:border-2 hover:border-[#FFED29]"
+            href="https://app.memyselfi.ai/login" target='blank'
+            className="px-4 py-1 rounded-lg text-base transition-colors duration-200 border-transparent border-2 hover:border-[#FFED29]"
           >
             Log In
           </Link>
 
           <Link
-            href="/signup"
-            className="px-4 py-1 rounded-lg font-semibold text-base transition-colors duration-200 hover:bg-yellow-500"
-            style={{ backgroundColor: '#FFED29', color: '#000000' }}
+            href="https://app.memyselfi.ai/signup" target='blank'
+            className="px-4 py-1 rounded-lg font-semibold  text-black  transition-colors bg-[#FFED29] duration-200  hover:bg-[#000000] hover:text-[#FFED29]"
           >
             Sign Up
           </Link>
@@ -230,8 +229,8 @@ const isMobileActive = (path: string) => pathname === path;
           {theme === 'light' ? <MoonIcon className="w-5 h-5" /> : <SunIcon className="w-5 h-5" />}
         </button>
         {/* LOGIN / SIGNUP */}
-        <Link href="/login" className="mt-6 px-4 py-2 rounded-lg text-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Log In</Link>
-        <Link href="/signup" className="px-4 py-2 rounded-lg text-center hover:bg-yellow-500 transition-colors">Sign Up</Link>
+        <Link href="https://app.memyselfi.ai/login" className="mt-6 px-4 py-2 rounded-lg text-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Log In</Link>
+        <Link href="https://app.memyselfi.ai/signup" className="px-4 py-2 rounded-lg text-center hover:bg-yellow-500 transition-colors">Sign Up</Link>
       </div>
     </div>
   </div>
