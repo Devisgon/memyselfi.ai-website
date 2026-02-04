@@ -9,8 +9,7 @@ export const Footer = () => {
     <footer
       className="
         w-full 
-        bg-(--bg-primary) 
-        dark:bg-[#000000] 
+        :bg-[#000000] 
         py-6 px-6
       "
     >
@@ -40,13 +39,13 @@ export const Footer = () => {
           </div>
           {/* Social Icons */}
           <div className="flex gap-4 mt-2 sm:mt-0 text-(--text-secondary)">
-            <a href="#" aria-label="LinkedIn" className="hover:text-buttonBg transition">
+            <a href="https://linkedin.com/" target='blank' aria-label="LinkedIn" className="hover:text-buttonBg transition">
               <Linkedin size={20} />
             </a>
-            <a href="#" aria-label="Facebook" className="hover:text-buttonBg transition">
+            <a href="https://www.facebook.com/memyselfiai" target='blank' aria-label="Facebook" className="hover:text-buttonBg transition">
               <Facebook size={20} />
             </a>
-            <a href="#" aria-label="Instagram" className="hover:text-buttonBg transition">
+            <a href="https://www.instagram.com/memyselfi.ai" target='blank' aria-label="Instagram" className="hover:text-buttonBg transition">
               <Instagram size={20} />
             </a>
           </div>
