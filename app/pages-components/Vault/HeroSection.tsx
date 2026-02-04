@@ -20,9 +20,10 @@ export default function HeroSection() {
           Protect your sensitive documents with Vault's advanced encryption and secure storage solutions. Access your files anytime, anywhere, with peace of mind.
         </p></SlideRight>       
 
-<SlideUp>   <button className="px-6 sm:px-8 py-2 sm:py-3 rounded-xl bg-[#FFEF43] text-black font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+<SlideUp> <Hovering>        <a href="https://app.memyselfi.ai/signup" target="blank">
+  <button className="px-6 cursor-pointer sm:px-8 py-2 sm:py-3 rounded-xl bg-[#FFEF43] text-black font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
           Get Started
-        </button></SlideUp>     
+        </button></a></Hovering></SlideUp>     
 
 <Hovering>
          <div className="w-full sm:w-[300px] md:w-[400px] lg:w-[700px] mt-2 sm:mt-6 md:mt-8  ">

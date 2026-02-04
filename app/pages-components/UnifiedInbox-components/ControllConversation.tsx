@@ -24,11 +24,11 @@ export default function ControllConversation() {
     <SlideRight>   <p className="text-lg opacity-90 text-(--text-secondary)">
          Try Unified Inbox Today
         </p></SlideRight> 
-     <Hovering><button
+     <Hovering><a href="https://app.memyselfi.ai/signup" target="blank"><button
           className="
-            mt-4  px-8 py-3  rounded-xl  bg-(--bg-button)  text-black  font-semibold  shadow-md  hover:opacity-90  transition">
+            mt-4  px-8 py-3  rounded-xl cursor-pointer bg-(--bg-button)  text-black  font-semibold  shadow-md  hover:opacity-90  transition">
           Get Started
-        </button></Hovering> 
+        </button></a></Hovering> 
       </div>
       </SlideUp> 
     </section>

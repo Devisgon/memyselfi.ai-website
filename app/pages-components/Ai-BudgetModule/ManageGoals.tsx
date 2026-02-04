@@ -17,10 +17,11 @@ export default function ManageGoals() {
  <SlideUp><h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             LOOKING TO MANAGE PERSONAL<br /> GOALS AND BUSINESS BUDGETS
           </h1> </SlideUp>
-        <Hovering>
-          <button className="px-6 sm:px-8 py-2 sm:py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition">
+        <Hovering>        <a href="https://app.memyselfi.ai/signup" target="blank">
+
+          <button className="px-6 sm:px-8 cursor-pointer py-2 sm:py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:bg-[#FFEF43] transition">
             GET STARTED
-          </button>
+          </button></a>
         </Hovering>
       </div>
     </section>

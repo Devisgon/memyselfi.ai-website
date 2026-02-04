@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FC } from "react";
 import { useTheme } from "../../components/ThemeProvider";
 import HeroCarousel from "./HeroCarousal";
-import { SlideLeft, SlideRight, SlideUp } from "@/app/components/Animations";
+import { Hovering, SlideLeft, SlideRight, SlideUp } from "@/app/components/Animations";
 
 const HeroSection: FC = () => {
   const { theme } = useTheme();
@@ -48,11 +48,13 @@ const HeroSection: FC = () => {
             </p>
           </SlideRight>
           <SlideUp>
+            <Hovering> <a href="https://app.memyselfi.ai/signup" target="blank">
+
             <div
               className="inline-block px-4 py-2 rounded-lg shadow-[0_0_20px_var(--bg-button)] mb-4 relative text-sm sm:text-base"
               style={{ background: "var(--bg-button)" }} >
               <span className="font-semibold text-black">GET STARTED</span>
-            </div>
+            </div></a></Hovering>
           </SlideUp>
         </div>
         {/* Carousel */}

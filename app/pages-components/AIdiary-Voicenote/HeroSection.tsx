@@ -41,7 +41,8 @@ const HeroSection: FC = () => {
 Capture moments through text or voice, auto-organized by date, mood, and topic.
         </p></SlideRight>       
 
-<SlideUp><div
+<SlideUp>  <Hovering>      <a href="https://app.memyselfi.ai/signup" target="blank">
+<div
           className="inline-block px-4 py-2 rounded-lg shadow-[0_0_20px_var(--bg-button)] mb-4 relative"
           style={{
             background: "var(--bg-button)",
@@ -50,7 +51,7 @@ Capture moments through text or voice, auto-organized by date, mood, and topic.
           <span className="font-semibold text-black">
             GET STARTED
           </span>
-        </div></SlideUp> 
+        </div></a></Hovering></SlideUp> 
       </div>
 {/* RIGHT IMAGE */}
 <div className="relative -mb-6 bottom-0">

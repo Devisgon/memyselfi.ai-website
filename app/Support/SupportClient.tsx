@@ -11,7 +11,9 @@ export default function Support() {
   <HeroSection/>
   <LiveChatAssistant/>
   <EmailUsDirectly/>
-  <ContactUs/>
+  <section id="support">
+  <ContactUs />
+  </section>
   <Footer/>
   </> 
   );
