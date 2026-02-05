@@ -8,7 +8,7 @@ export const BusinessUses = () => {
         <Hovering>
           <div className="w-full sm:w-[420px] h-[300px] flex justify-center md:justify-start shrink-0 mb-6 md:mb-0">
             <img
-              src="/Vault/Businessvault.png"
+              src="/Vault/Businessvault.svg"
               alt="Right Inbox"
               className="object-cover rounded-[15px] drop-shadow-[0_0_10px_rgba(255,239,67,0.8)]"
             />

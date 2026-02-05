@@ -5,7 +5,7 @@ import { SlideUp, SlideLeft, SlideRight , Hovering} from "@/app/components/Anima
 export default function HeroSection() {
   return (
     <section
-      className="relative w-full min-h-[900px] mt-4 bg-cover bg-center px-4 sm:px-6 md:px-10 lg:px-20 flex items-center justify-center"
+      className="relative w-full min-h-[900px] mt-4 lg:mt-8  bg-contain bg-center lg:bg-bottom   bg-no-repeat px-4 sm:px-6 md:px-10 lg:px-20 flex items-center justify-center"
       style={{
         backgroundImage: "url('/Vault/hero-bg.png')",
       }}

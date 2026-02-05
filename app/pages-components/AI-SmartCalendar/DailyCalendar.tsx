@@ -49,7 +49,7 @@ const DailyCalendar: FC = () => {
             background: "var(--bg-button)",
           }}
         >
-          <span className="font-semibold text-(--text-primary)">
+          <span className="font-semibold text-black">
             Productivity Impact:
           </span>
         </div></SlideUp> 
@@ -62,7 +62,7 @@ const DailyCalendar: FC = () => {
       {/* RIGHT IMAGE */}
 <SlideLeft><div className="relative w-[600px] h-[410px] mb-9">
   <Image
-    src="/Smart-ai-calendar/daily-calendar.png"
+    src="/Smart-ai-calendar/daily_calendar.png"
     alt="weekly  Calendar Preview"
     fill
     className="object-contain drop-shadow-[0_0_40px_rgba(255,239,67,0.8)]"

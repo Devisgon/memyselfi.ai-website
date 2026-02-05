@@ -18,7 +18,7 @@ const carouselItems = [
     Text: '“Text Toby i’ll meet him At 11PM.”',
   },
   {
-    image: "/Unified-inbox/Slack-h.png",
+    image: "/Unified-inbox/Outlook-h.png",
    icon: ( <img
       src="/Unified-inbox/si.svg"
       alt="WhatsApp"
@@ -42,7 +42,7 @@ const carouselItems = [
     image: "/Unified-inbox/Gmail-h.png",
     icon: (
     <img
-      src="/Unified-inbox/gi.svg"
+      src="/Unified-inbox/wi.svg"
       alt="WhatsApp"
       width="40"
       height="40"
@@ -53,7 +53,7 @@ const carouselItems = [
     image: "/Unified-inbox/Outlook-h.png",
          icon: (
     <img
-      src="/Unified-inbox/oi.svg"
+      src="/Unified-inbox/ii.svg"
       alt="WhatsApp"
       width="40"
       height="40"
@@ -64,7 +64,7 @@ const carouselItems = [
     image: "/Unified-inbox/Facebook-h.png",
          icon: (
     <img
-      src="/Unified-inbox/fi.svg"
+      src="/Unified-inbox/ii.svg"
       alt="WhatsApp"
       width="40"
       height="40"
@@ -162,8 +162,8 @@ export default function HeroSection() {
               <div className="flex items-center gap-3 max-md:justify-center md:justify-start">
             {currentItem.icon}
             <p
-              className="text-[15px] font-bold text-(--text-primary)"
-              style={{ textShadow: "0 0 8px #FFEF43" }} >
+              className="text-[15px] font-bold text-black"
+              >
               {currentItem.Text}
             </p>
           </div>

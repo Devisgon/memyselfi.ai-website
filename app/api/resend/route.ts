@@ -7,7 +7,7 @@ export async function POST(req: Request) {
       from: process.env.RESEND_DOMAIN!,
       to: [process.env.RESEND_EMAIL_USER!], 
       reply_to: email,
-      subject: `New Inquiry from meMyself.ai`,
+      subject: `Website Enquiry - MeMyselfI.ai`,
       html: `
         <h2></h2>
         <p><bold>Name:</bold> ${name}</p>

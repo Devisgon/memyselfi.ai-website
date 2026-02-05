@@ -28,7 +28,7 @@ export const PersonalUses = () => {
           <Hovering>
             <div className="w-full sm:w-[370px] h-[300px] flex justify-center md:justify-start shrink-0 mt-6 md:mt-0">
               <img
-                src="/Vault/Personalvault.png"
+                src="/Vault/Personalvault.svg"
                 alt="Right Inbox"
                 className="object-cover rounded-[15px] drop-shadow-[0_0_10px_rgba(255,239,67,0.8)]"
               />
