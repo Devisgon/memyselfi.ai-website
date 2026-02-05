@@ -30,7 +30,7 @@ export  const WeeklyCalendar: FC = () => {
       {/* RIGHT IMAGE */}
 <SlideRight><div className="relative w-[500px] h-[450px] mb-9">
   <Image
-    src="/Smart-ai-calendar/weekly-calendar.png"
+    src="/Smart-ai-calendar/weekly_calendar.png"
     alt="Daily Calendar Preview"
     fill
     className="object-contain drop-shadow-[0_0_40px_rgba(255,239,67,0.8)]"
@@ -57,7 +57,7 @@ export  const WeeklyCalendar: FC = () => {
             background: "var(--bg-button)",
           }}
         >
-          <span className="font-semibold text-(--text-primary)">
+          <span className="font-semibold text-black">
             Productivity Impact:
           </span>
         </div></Hovering>     

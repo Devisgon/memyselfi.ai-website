@@ -44,7 +44,7 @@ const FamilySharing: FC = () => {
             background: "var(--bg-button)",
           }}
         >
-          <span className="font-semibold text-(--text-primary)">
+          <span className="font-semibold text-black">
             From soccer practice to Sunday dinners — it’s all in one calendar.
           </span>
         </div></SlideUp>  

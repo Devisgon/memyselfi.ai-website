@@ -75,7 +75,7 @@ export default function TransparentPricing() {
                 ))}
               </ul>
               <a href="https://app.memyselfi.ai/signup" target="blank  ">
-              <button className="cursor-pointer sm:mt-16 w-full py-2 sm:py-3 rounded-lg font-semibold bg-(--bg-button) text-black hover:opacity-90 transition text-sm sm:text-base">
+              <button className="cursor-pointer mt-8 w-full py-2 sm:py-3 rounded-lg font-semibold bg-(--bg-button) text-black hover:opacity-90 transition text-sm sm:text-base">
                 Sign Up Now
               </button></a>
             </div>
@@ -114,7 +114,7 @@ export default function TransparentPricing() {
               </ul>
               <a href="https://app.memyselfi.ai/signup" target="blank  ">
 
-              <button className="cursor-pointer sm:mt-12 w-full py-2 sm:py-3 rounded-lg font-semibold bg-(--bg-button) text-black hover:opacity-90 transition text-sm sm:text-base">
+              <button className="cursor-pointer mt-8 w-full py-2 sm:py-3 rounded-lg font-semibold bg-(--bg-button) text-black hover:opacity-90 transition text-sm sm:text-base">
                 Sign Up Now
               </button></a>
             </div>

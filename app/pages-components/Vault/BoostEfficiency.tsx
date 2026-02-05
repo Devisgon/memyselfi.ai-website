@@ -22,12 +22,11 @@ export default function BoostEfficiency() {
           {/* LEFT – MOBILE IMAGE */}
           <div className="relative w-full md:w-1/2 flex justify-center md:justify-start items-end 
               pl-0 md:pl-16 pt-10 md:pt-0 z-20">
-            <Image
-              src="/Vault/mobile.png"
+            <img
+              src="/Vault/vault_mobile.png"
               alt="Vault Mobile App"
               width={240}
               height={480}
-              priority
               className="md:w-[280px] md:h-[560px] -mt-6 md:-mt-8 drop-shadow-2xl" />
           </div>
           {/* RIGHT – CONTENT */}

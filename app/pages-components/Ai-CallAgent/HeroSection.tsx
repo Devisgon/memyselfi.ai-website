@@ -51,8 +51,8 @@ export const HeroSection: FC = () => {
           </div>
           <SlideRight> <div className="flex-1 relative flex justify-center w-full max-w-[500px]">
               <div className="absolute inset-0 blur-[120px] bg-[#FFE86A]/60 rounded-full"></div>
-              <Image
-                src="/Ai-CallAgent/real-life.png"
+              <img
+                src="Ai-CallAgent/herosection.png"
                 alt="Hero Image"
                 width={400}
                 height={400}

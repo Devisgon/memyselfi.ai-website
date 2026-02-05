@@ -64,7 +64,7 @@ export const RealTimeScenarios = () => {
         <SlideRight>
           <div className="w-full lg:w-4/5 flex justify-center">
             <Image
-              src="/Ai-CallAgent/real-life.png"
+              src="/Ai-CallAgent/real_life.png"
               alt="Real Time Scenarios"
               width={600}
               height={500}

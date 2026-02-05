@@ -13,7 +13,7 @@ export default function Navbar() {
   const pathname = usePathname();
 const isMobileActive = (path: string) => pathname === path;
   const isActive = (path: string) => pathname === path;
-  const hoverColor = theme === 'dark' ? 'hover:text-yellow-400' : 'hover:text-yellow-500';
+  const hoverColor = theme === 'dark' ? 'hover:text-[#FFED29]' : 'hover:text-[#FFED29]';
   const goToPricing = () => {
     if (pathname === "/") {
       document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
@@ -55,22 +55,20 @@ const isMobileActive = (path: string) => pathname === path;
       className="w-full shadow-sm fixed top-0 left-0 z-50 text-base font-inter font-regular"
       style={{ backgroundColor: 'var(--bg-primary)' }}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-2">
         <Link
           href="/"
-          className={`flex items-center justify-center gap-2 transition-colors duration-200
-            ${theme === 'dark' ? 'hover:text-yellow-400' : 'hover:text-yellow-500'}
+          className={`flex items-center justify-center  transition-colors duration-200
           `}
         >
-          <Image
+          <img
             src={theme === 'light'
               ? "/landingpage-images/light-theme-logo.png"
               : "/landingpage-images/dark-theme-logo.png"
             }
-            alt="Main Logo"
-            width={150}
-            height={50}
-            priority
+            alt="Main Logo"      
+            className='w-60 h-12'
+            
           />
         </Link>
         {/* DESKTOP MENU */}
@@ -80,7 +78,7 @@ const isMobileActive = (path: string) => pathname === path;
             <button
               className={`
                 flex items-center gap-1 text-base transition-colors duration-200
-                ${isAnyFeatureActive || isFeaturesOpen ? "text-yellow-400" : "text-(--text-primary)"}
+                ${isAnyFeatureActive || isFeaturesOpen ? "text-[#FFED29]" : "text-(--text-primary)"}
                 ${!isAnyFeatureActive && !isFeaturesOpen ? hoverColor : ""}
               `}
               onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
@@ -101,35 +99,43 @@ const isMobileActive = (path: string) => pathname === path;
 
                 <Link href="/UnifiedInbox"
                   className={`block px-4 py-2 text-base transition-colors duration-200
-                    ${isActive('/UnifiedInbox') ? 'text-yellow-400' : hoverColor}`}>Unified Inbox</Link>
+                    ${isActive('/UnifiedInbox') ? 'text-[#FFED29]' : hoverColor}`} onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+>Unified Inbox </Link>
 
                 <Link href="/AiSmartCalendar"
                   className={`block px-4 py-2 text-base transition-colors duration-200
-                    ${isActive('/AiSmartCalendar') ? 'text-yellow-400' : hoverColor}`}>AI Smart Calendar</Link>
+                    ${isActive('/AiSmartCalendar') ? 'text-[#FFED29]' : hoverColor}`} onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+>AI Smart Calendar</Link>
 
                 <Link href="/AiDiaryVoicenotes"
                   className={`block px-4 py-2 text-base transition-colors duration-200
-                    ${isActive('/AiDiaryVoicenotes') ? 'text-yellow-400' : hoverColor}`}>AI Diary & Voice Notes</Link>
+                    ${isActive('/AiDiaryVoicenotes') ? 'text-[#FFED29]' : hoverColor}`} onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+>AI Diary & Voice Notes</Link>
 
                 <Link href="/AiVoiceAssistant"
                   className={`block px-4 py-2 text-base transition-colors duration-200
-                    ${isActive('/AiVoiceAssistant') ? 'text-yellow-400' : hoverColor}`}>AI Voice Assistant</Link>
+                    ${isActive('/AiVoiceAssistant') ? 'text-[#FFED29]' : hoverColor}`} onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+>AI Voice Assistant</Link>
 
                 <Link href="/AiCallAgent"
                   className={`block px-4 py-2 text-base transition-colors duration-200
-                    ${isActive('/AiCallAgent') ? 'text-yellow-400' : hoverColor}`}>AI Call Agent</Link>
+                    ${isActive('/AiCallAgent') ? 'text-[#FFED29]' : hoverColor}`} onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+>AI Call Agent</Link>
 
                 <Link href="/AiBudgetModule"
                   className={`block px-4 py-2 text-base transition-colors duration-200
-                    ${isActive('/AiBudgetModule') ? 'text-yellow-400' : hoverColor}`}>AI Budget Module</Link>
+                    ${isActive('/AiBudgetModule') ? 'text-[#FFED29]' : hoverColor}`} onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+>AI Budget Module</Link>
 
                 <Link href="/Vault"
                   className={`block px-4 py-2 text-base transition-colors duration-200
-                    ${isActive('/Vault') ? 'text-yellow-400' : hoverColor}`}>Vault</Link>
+                    ${isActive('/Vault') ? 'text-[#FFED29]' : hoverColor}`} onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+>Vault</Link>
 
                         <Link href="/AiHealthTracking"
                   className={`block px-4 py-2 text-base transition-colors duration-200
-                    ${isActive('/AiHealthTracking') ? 'text-yellow-400' : hoverColor}`}>AI Health Tracking</Link>
+                    ${isActive('/AiHealthTracking') ? 'text-[#FFED29]' : hoverColor}`} onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+>AI Health Tracking</Link>
               </div>
             )}
           </div>

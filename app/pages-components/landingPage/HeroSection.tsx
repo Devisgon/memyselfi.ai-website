@@ -16,14 +16,16 @@ export const HeroSection: FC = () => {
   }, []);
 
   return (
-       <section className="w-full min-h-[calc(100vh-80px)] overflow-hidden bg-cover bg-center bg-no-repeat flex items-center justify-center px-4 transition-colors duration-500 pt-20"
- style={{
-        backgroundImage: `url(${isDark
-          ? '/landingpage-images/Hero-Section-bg.png'
-          : '/landingpage-images/Hero-Section-bg.png'
-          })`,
-      }} >
-      <div className="text-center  max-w-4xl">
+       <section className="w-full h-screen md:h-[700px] 
+  relative overflow-hidden  flex items-center justify-center px-4 transition-colors duration-500 pt-20"
+ >
+        <img
+        src="/landingpage-images/Hero-Section-bg.png"
+        alt='hero'
+        className='absolute h-full w-full object-bottom
+        '
+        />
+      <div className="text-center pt-16  absolute max-w-4xl">
         {/* HEADING */}
         <SlideUp>
           <h1
@@ -54,7 +56,7 @@ export const HeroSection: FC = () => {
            <a href="https://app.memyselfi.ai/signup" target="blank  ">
 
             <button
-                className=" px-6 py-3 cursor-pointer w-full sm:w-auto  font-medium rounded-lg  transition-colors duration-300 bg-(--bg-button) text-black ">
+                className=" px-6 py-3  cursor-pointer w-full sm:w-auto  font-medium rounded-lg  transition-colors duration-300 bg-(--bg-button) text-black ">
                 Create Account
               </button></a></Hovering>
           </SlideLeft>

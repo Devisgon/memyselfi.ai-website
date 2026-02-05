@@ -19,7 +19,7 @@ export const WhyMatters = () => {
       <img
         src="/Unified-inbox/mobile.png"
         alt="Inbox Visual"
-        className="w-[480px] h-[500px] object-cover  blur-[1px]"
+        className="w-[480px] h-[500px] object-contain  "
       />
     </div>
 

@@ -15,16 +15,14 @@ export const Footer = () => {
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-0">
                <div className="flex flex-col items-start">
-          <Image
+          <img
             src={
               theme === 'light'
                 ? '/landingpage-images/light-theme-logo.png'
                 : '/landingpage-images/dark-theme-logo.png'
             }
             alt="MeMyself.ai Logo"
-            width={140}
-            height={60}
-            priority
+            className='w-52 h-10'
           />
           <span className="text-(--text-secondary) text-sm">
             2025 MeMyself.ai. All rights reserved.
