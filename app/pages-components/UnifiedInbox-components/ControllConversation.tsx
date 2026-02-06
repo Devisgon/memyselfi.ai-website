@@ -16,7 +16,7 @@ export default function ControllConversation() {
 />
 
   <SlideUp> 
-      <div className="max-w-3xl text-center justify-center space-y-6">
+      <div className="max-w-3xl relative text-center justify-center space-y-6">
    <SlideLeft>   <h1 className="text-4xl font-bold text-(--text-primary)">
           Take Back Control of Your Conversations.
         </h1></SlideLeft>  

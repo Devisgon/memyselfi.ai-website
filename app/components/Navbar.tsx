@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState ,useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -9,6 +9,19 @@ import { useTheme } from './ThemeProvider';
 export default function Navbar() {
   const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseLeave = () => {
+    timerRef.current = setTimeout(() => {
+     setIsFeaturesOpen(false);
+    }, 300); 
+  };
+
+  const handleMouseEnter = () => {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current); 
+    }
+  };
   const { theme, toggleTheme } = useTheme();
   const pathname = usePathname();
 const isMobileActive = (path: string) => pathname === path;
@@ -74,7 +87,9 @@ const isMobileActive = (path: string) => pathname === path;
         {/* DESKTOP MENU */}
         <div className="hidden md:flex items-center gap-6">
           {/* FEATURES DROPDOWN */}
-          <div className="relative">
+          <div className="relative"
+          onMouseLeave={handleMouseLeave}
+          onMouseEnter={handleMouseEnter}>
             <button
               className={`
                 flex items-center gap-1 text-base transition-colors duration-200
@@ -82,7 +97,8 @@ const isMobileActive = (path: string) => pathname === path;
                 ${!isAnyFeatureActive && !isFeaturesOpen ? hoverColor : ""}
               `}
               onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
-            >
+               >
+
               Features
               <ChevronDownIcon
                 className={`w-4 h-4 transition-transform duration-300 ${isFeaturesOpen ? 'rotate-180' : ''}`}

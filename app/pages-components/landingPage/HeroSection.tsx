@@ -16,20 +16,30 @@ export const HeroSection: FC = () => {
   }, []);
 
   return (
-       <section className="w-full h-screen md:h-[700px] 
-  relative overflow-hidden  flex items-center justify-center px-4 transition-colors duration-500 pt-20"
- >
-        <img
-        src="/landingpage-images/Hero-Section-bg.png"
-        alt='hero'
-        className='absolute h-full w-full object-bottom
-        '
-        />
-      <div className="text-center pt-16  absolute max-w-4xl">
+ <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+
+  {/* Background Image */}
+  <img
+    src="/landingpage-images/Updated_hero2.png"
+    alt="hero"
+    className="
+      absolute inset-0
+      h-full       
+      w-auto       
+      mx-auto 
+      object-cover  md:mt-3 overflow-y-visible   
+      md:object-contain
+      pointer-events-none
+      select-none
+    "
+  />
+
+       
+      <div className="text-center pt-16 relative z-10   max-w-4xl">
         {/* HEADING */}
         <SlideUp>
           <h1
-            className="font-bold  text-4xl sm:text-5xl md:text-6xl lg:text-[70px] leading-snug md:leading-tight lg:leading-[1.1] tracking-tight lg:tracking-[-2px] text-[#FFFFFF] ">
+            className="font-bold  text-4xl  sm:text-5xl mt-20 md:text-5xl lg:text-[70px] leading-snug md:leading-tight lg:leading-[1.1] tracking-tight lg:tracking-[-2px] text-[#FFFFFF] ">
             Your Life. All in One Place,{" "}
             <span className="text-(--bg-button) px-[10]">
               Powered by your Personal AI Assistant.
@@ -39,7 +49,7 @@ export const HeroSection: FC = () => {
         {/* PARAGRAPH */}
         <FadeIn>
           <p
-            className="font-inter  text-regular sm:text-lg md:text-[18px]  mt-4 opacity-90 px-4 sm:px-10 md:px-20  leading-relaxed text-[#FFFFFF]">
+            className="font-inter  text-regular sm:text-lg md:text-[16px]  mt-4 opacity-90 px-4 sm:px-10 md:px-20  leading-relaxed text-[#FFFFFF]">
             Tired of juggling apps, calendars, messages, and endless to-dos? Meet your AI
             assistant that brings everything together. From syncing both your personal and work
             schedule to organising documents, messages, and reminders – it keeps your life in
@@ -49,7 +59,7 @@ export const HeroSection: FC = () => {
           </p>
         </FadeIn>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 mb-8">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 mb-12">
           {/* LEFT BUTTON */}
           <SlideLeft>
           <Hovering>
