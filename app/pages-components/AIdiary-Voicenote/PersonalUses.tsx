@@ -30,7 +30,7 @@ export const PersonalUses = () => {
             <Hovering>
               <div className="w-full sm:w-[350px] md:w-[400px] h-[300px] sm:h-[380px] md:h-[420px] shrink-0 mt-6 lg:mt-0">
                 <img
-                  src="AIdiary-Voicenote/personal-uses.png"
+                  src="AIdiary-Voicenote/personal-uses.svg"
                   alt="Right Inbox"
                   className="object-cover w-full h-full"
                 />

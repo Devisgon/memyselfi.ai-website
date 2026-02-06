@@ -9,7 +9,7 @@ export default function WhatUserSays({ theme = "dark", cards: incomingCards, cla
     { id: 2, name: "Emma Rodriguez", role: "Freelance Designer", text: '"The unified inbox is a game-changer. I used to miss important messages across different platforms, but now everything is in one place with smart priority sorting."', avatar: '/landingpage-images/wus-emma.png', rating: 5 },
     { id: 3, name: "Sarah Johnson", role: "Marketing Director", text: '"The AI voice assistant has completely changed how I manage my day. I can dictate emails while cooking dinner and never miss an important task."', avatar: '/landingpage-images/wus-sarah.png' , rating: 5 },
     { id: 4, name: "Sara Ahmed", role: "CTO", text: "Our team loved the focused card layout. Managing messages card layout made our testimonials pop. Managing messages has never been easier!", rating: 4 },
-    { id: 5, name: "Ehsan", role: "Customer Success", text: "Perfect for highlighting user feedback.card layout made our testimonials pop. Managing messages Managing messages has never been easier!", rating: 5 },
+    { id: 5, name: "Ehsan", role: "Customer Success", text: "“The card layout beautifully highlights user feedback and really makes our testimonials pop. Managing messages has never been easier!”", rating: 5 },
   ];
   const cards = defaultCards;
   const length = cards.length;

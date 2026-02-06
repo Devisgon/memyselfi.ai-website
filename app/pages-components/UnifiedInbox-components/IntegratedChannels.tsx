@@ -40,7 +40,6 @@ export default function IntegratedChannels() {
 
 function ChannelCard({ name, img }: { name: string; img: string }) {
   return (
-    <Hovering>
       <div className="flex flex-col items-center group transition-all duration-300">
         <div
           className="
@@ -48,7 +47,7 @@ function ChannelCard({ name, img }: { name: string; img: string }) {
             sm:w-[220px] sm:h-[220px]
             lg:w-[270px] lg:h-[270px]
             flex items-center justify-center
-            bg-(--bg-bg)
+            bg-(--bg-bg) rounded-4xl
             border dark:border-white
             shadow-sm
             transition-all duration-300
@@ -57,9 +56,9 @@ function ChannelCard({ name, img }: { name: string; img: string }) {
           <Image
             src={img}
             alt={name}
-            width={235}
+            width={215}
             height={215}
-            className="w-[150px] h-[140px] sm:w-[190px] sm:h-[175px] lg:w-[235px] lg:h-[215px] object-contain"
+            className="w-[150px] h-[140px]  lg:w-[200px] lg:h-[215px] object-contain"
           />
         </div>
         <div
@@ -80,6 +79,5 @@ function ChannelCard({ name, img }: { name: string; img: string }) {
           {name}
         </div>
       </div>
-    </Hovering>
   );
 }

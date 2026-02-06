@@ -14,12 +14,11 @@ export const HowItWorks = () => {
         <div className="mt-12 sm:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full pl-0 sm:pl-6">         
           <SlideLeft>
             <div className="w-full flex justify-center">
-              <Image
-                src="/Ai-CallAgent/howItWork.png"
+              <img
+          
+                src="/Ai-CallAgent/how_work.png"
                 alt="How it works Dashboard"
-                width={760}
-                height={550}
-                className="w-full h-auto"
+                className="  rounded-xl"
               />
             </div>
           </SlideLeft>
