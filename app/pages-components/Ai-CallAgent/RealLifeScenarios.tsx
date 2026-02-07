@@ -27,7 +27,7 @@ export const RealTimeScenarios = () => {
   const { theme } = useTheme();
 
   return (
-    <section className="w-full py-20 pl-10 bg-(--bg-bg)">
+    <section className="w-full py-20  md:pl-4 bg-(--bg-bg)">
       {/* Center Heading */}
       <div className="max-w-4xl mx-auto text-center mb-16">
  <SlideUp> <h2 className="text-4xl font-bold text-(--text-primary) mb-4">

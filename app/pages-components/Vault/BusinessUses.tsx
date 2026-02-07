@@ -19,7 +19,7 @@ export const BusinessUses = () => {
       <div className="relative z-10 max-w-6xl w-full flex flex-col items-center text-center md:text-left">
         <SlideLeft> 
           <div className="flex flex-col   w-full">
-            <h2 className="text-4xl sm:text-5xl pl-18 font-bold mb-6 text-[#FFF15C] transition-colors duration-500">
+            <h2 className="text-4xl sm:text-5xl md:pl-18  font-bold mb-6 text-[#FFF15C] transition-colors duration-500">
               Business Uses
             </h2>
 

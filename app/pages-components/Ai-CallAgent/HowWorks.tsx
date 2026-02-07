@@ -13,7 +13,7 @@ export const HowItWorks = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <div className="mt-12 sm:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full pl-0 sm:pl-6">         
           <SlideLeft>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex mt-8 justify-center">
               <img
           
                 src="/Ai-CallAgent/how_work.png"

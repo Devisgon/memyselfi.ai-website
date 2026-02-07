@@ -29,7 +29,7 @@ const FamilySharing: FC = () => {
   />
 )}
  {/* LEFT CONTENT WITH GLOW */}
-      <div className="max-w-xl relative pl-10 md:pl-10">
+      <div className="max-w-xl relative  pl-6 md:pl-10">
  <SlideLeft>   <h2 className="text-4xl md:text-5xl font-bold mb-6 text-(--text-primary)">
           Family Sharing
         </h2> </SlideLeft>
@@ -53,7 +53,7 @@ const FamilySharing: FC = () => {
       {/* RIGHT IMAGE */}
  <Hovering>    <div className="md:mt-0">
         <Image
-          src="/Smart-ai-calendar/familySharing.png"
+          src="/Smart-ai-calendar/family.png"
           alt="family sharing Calendar Preview"
           width={380}
           height={500}

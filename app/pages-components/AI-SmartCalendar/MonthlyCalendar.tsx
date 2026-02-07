@@ -28,7 +28,7 @@ const MonthlyCalendar: FC = () => {
   />
 )}
  {/* LEFT CONTENT WITH GLOW */}
-      <div className="max-w-full sm:max-w-xl relative pl-4 sm:pl-6 md:pl-10 mb-8 md:mb-0">
+      <div className="max-w-full sm:max-w-xl pt-8 relative pl-6 sm:pl-6 md:pl-10 mb-8 md:mb-0">
  <SlideLeft>   <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-6 text-(--text-primary)">
           Monthly Calendar
         </h2> </SlideLeft>

@@ -43,7 +43,7 @@ function ChannelCard({ name, img }: { name: string; img: string }) {
       <div className="flex flex-col items-center group transition-all duration-300">
         <div
           className="
-            w-[180px] h-[180px]
+            w-[170px] h-[180px]
             sm:w-[220px] sm:h-[220px]
             lg:w-[270px] lg:h-[270px]
             flex items-center justify-center

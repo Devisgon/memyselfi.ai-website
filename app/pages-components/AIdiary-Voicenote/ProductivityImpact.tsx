@@ -1,38 +1,83 @@
 'use client';
-import { SlideLeft, SlideRight, SlideUp ,Hovering } from "@/app/components/Animations";
+import { SlideLeft, Hovering } from "@/app/components/Animations";
 import Image from "next/image";
+
 export const ProductivityGain = () => {
   return (
-    <section className="relative w-full flex items-center justify-center  py-10 p-30">
-      <section className="relative  w-[1150] h-[550] rounded-2xl py-8 px-6 md:px-20 overflow-hidden">
-<Hovering><div className="absolute inset-0 -z-10">
-        <Image
-          src="/AIdiary-Voicenote/productivityImpact.png"   
-          alt="section background"
-          fill
-          className="object-cover object-center  opacity-100"
-          priority
-        />
-      </div></Hovering> 
-<div className="flex gap-6">
-<div className="w-150"></div>
- <div className="flex  justify-center items-start ">
- <SlideLeft> 
-<h2 className="text-4xl sm:text-5xl font-bold mb-6 text-black  transition-colors duration-500">
-  Productivity Impact:
-        </h2>
-   <ul className="text-black space-y-2  relative">
-          <li>• Save up to 50% more time by dictating notes instead of &nbsp;&nbsp;&nbsp;typing.</li>
-          <li>• Retrieve by AI assistant by voice when asked about that &nbsp;&nbsp;&nbsp;day’s diary entry.</li>
-          <li>• Improve goal tracking and project memory by keeping all &nbsp;&nbsp;&nbsp;personal reflections in one organized space.</li>
-          <li>• Turn scattered thoughts into clear, actionable steps with AI &nbsp;&nbsp;&nbsp;summarization.</li>
-          <li>• Turn scattered thoughts into clear, actionable steps with AI &nbsp;&nbsp;&nbsp;summarization.</li>
-          <li>• Record meetings, AI captures key points and generates smart &nbsp;&nbsp;&nbsp;summaries.</li>
-        </ul>
-     </SlideLeft> 
- </div>
-</div>
-    </section>
+    <section className="relative w-full flex items-center justify-center px-4 py-10">
+
+      {/* container */}
+      <section
+        className="
+        relative w-full max-w-[1150px]
+        min-h-[380px] lg:h-[550px]
+        rounded-2xl
+        py-6 px-5
+        lg:px-20 lg:py-10
+        overflow-hidden
+      "
+      >
+
+        {/* background */}
+        <Hovering>
+          <div className="absolute inset-0 -z-10">
+            <Image
+              src="/AIdiary-Voicenote/productivityImpact.png"
+              alt="section background"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+          </div>
+        </Hovering>
+
+        {/* content */}
+        <div
+          className="
+          flex flex-col
+          lg:flex-row lg:items-center
+          gap-10 lg:gap-16
+          h-full
+        "
+        >
+
+          {/* Desktop spacing (only laptop) */}
+          <div className="hidden lg:block lg:w-1/3" />
+
+          <SlideLeft>
+            <div className="text-black ml-24 md:-mt-20">
+
+              {/* heading */}
+              <h2 className="
+                text-3xl 
+                sm:text-3xl
+                lg:text-5xl
+                font-bold
+                mb-4 lg:mb-6
+              ">
+                Productivity Impact:
+              </h2>
+
+              {/* list */}
+              <ul className="
+                space-y-2
+                text-sm
+                sm:text-base
+                lg:text-lg
+                leading-relaxed
+              ">
+                <li>• Save up to 50% more time by dictating notes instead of typing.</li>
+                <li>• Retrieve by AI assistant using voice queries.</li>
+                <li>• Improve goal tracking and project memory in one organized space.</li>
+                <li>• Turn scattered thoughts into actionable steps with AI summarization.</li>
+                <li>• Record meetings and generate smart summaries automatically.</li>
+              </ul>
+
+            </div>
+          </SlideLeft>
+
+        </div>
+      </section>
     </section>
   );
 };

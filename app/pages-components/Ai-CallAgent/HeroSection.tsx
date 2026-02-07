@@ -9,12 +9,12 @@ export const HeroSection: FC = () => {
       style={{
         backgroundImage: "url('/Ai-CallAgent/hero-bg.png')",
       }} >
-      <div className="absolute inset-0 flex items-center">
+      <div className="absolute mt-10 inset-0 flex items-center">
         <div className="w-full max-w-[1100px] h-auto mx-auto mt-12 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 p-6 sm:p-8 md:p-10 rounded-2xl"
           style={{
             background: "linear-gradient(to bottom, #FFFCDF, #FFF36F)",
           }} >
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <div className="flex flex-col mt-20 items-center lg:items-start text-center lg:text-left">
             <SlideUp>
               <div className="px-2 py-2 bg-[#FFEF43] mb-4 rounded-md w-[150px] h-[37px] flex items-center justify-center">
                 <p className="text-black font-semibold text-center text-sm tracking-wide">

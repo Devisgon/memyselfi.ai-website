@@ -36,7 +36,7 @@ export  const WeeklyCalendar: FC = () => {
     className="object-contain drop-shadow-[0_0_40px_rgba(255,239,67,0.8)]"
   />
 </div></SlideRight>
-      <div className="max-w-full sm:max-w-xl relative pr-4 sm:pr-6 md:pr-10">
+      <div className="max-w-full sm:max-w-xl ml-6 relative pr-4 sm:pr-4 md:pr-10">
 <SlideRight><h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-6 text-(--text-primary)">
           Weekly Calendar
         </h2></SlideRight>
