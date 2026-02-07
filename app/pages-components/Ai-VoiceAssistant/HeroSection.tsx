@@ -19,7 +19,7 @@ export default function HeroSection() {
           className="object-cover object-center"
         />
       </div>
-      <div className="text-center max-w-full sm:max-w-xl md:max-w-3xl px-4 sm:px-6 -mt-16 sm:-mt-20">
+      <div className="text-center  max-w-full sm:max-w-xl md:max-w-3xl px-4 sm:px-6 -mt-40 sm:-mt-20">
         <SlideUp>
           <div className="px-4 sm:px-6 py-2 bg-[#FFEF43] rounded-md inline-flex items-center justify-center shadow-md">
             <p className="text-black font-semibold text-xs sm:text-sm tracking-wide">

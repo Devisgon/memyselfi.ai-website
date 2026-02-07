@@ -42,8 +42,8 @@ export const PersonalUses= () => {
           <SlideRight>
             <div className="space-y-8">
               {items.map((item, i) => (
-                <div key={i} className="flex items-start gap-5">
- <div     className="w-12 h-12 flex items-center justify-center rounded-xl   bg-[#FFF8CC]/10   text-[#FFD600] shrink-0  shadow-[0_2px_8px_rgba(0,0,0,0.08)]  ">
+                <div key={i} className="flex -ml-16 md:ml-0 items-center gap-5">
+ <div     className="w-12 h-12 flex items-center justify-center rounded-xl    bg-[#FFD93D]/10  shrink-0 text-[#FFD600]  shadow-[0_2px_8px_rgba(0,0,0,0.08)]  ">
                     {item.icon}
                   </div>
                   <div>

@@ -32,7 +32,7 @@ export const PrivacyPolicy: FC<PrivacyPolicyProps> = () => {
     >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12"> 
         {/* LEFT SIDE */}
-        <div className="flex-1 flex flex-col pl-20 gap-6">
+        <div className="flex-1 flex flex-col md:pl-20 gap-6">
  <SlideLeft>     <h1
             className={`text-4xl font-bold ${
               theme === "dark" ? "text-(--text-primary)" : "text-(--text-primary)"

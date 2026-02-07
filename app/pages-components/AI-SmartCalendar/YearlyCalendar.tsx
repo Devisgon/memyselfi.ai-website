@@ -37,12 +37,12 @@ export  const YearlyCalendar: FC = () => {
    />
  </div></Hovering> 
        {/* LEFT CONTENT WITH GLOW */}
-      <div className="max-w-full sm:max-w-xl relative pr-4 sm:pr-6 md:pr-10">
+      <div className="max-w-full sm:max-w-xl relative pl-6 sm:pr-6 md:pr-10">
 <SlideRight><h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-6 text-(--text-primary)">
           Yearly Calendar
         </h2></SlideRight>    
 
-<SlideLeft>     <p className="text-(--text-secondary) leading-relaxed mb-6 text-sm sm:text-base">
+<SlideLeft>     <p className="text-(--text-secondary) leading-relaxed mb-6 text-sm  sm:text-base">
         Your year, perfectly mapped out. Look ahead and see your year unfold, from that big work project you’ve been planning, to your 
           <span className="font-semibold text-(--text-primary)"> {" "}dream vacation </span>{" "}
          , to  <span className="font-semibold text-(--text-primary)"> {" "}birthday </span>{" "}that mean the world to you. It’s all right there, in one place, so you can stay on top of things, hit your goals, and never miss a moment that matters.

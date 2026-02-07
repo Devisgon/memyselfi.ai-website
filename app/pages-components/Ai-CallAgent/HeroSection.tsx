@@ -9,7 +9,7 @@ export const HeroSection: FC = () => {
       style={{
         backgroundImage: "url('/Ai-CallAgent/hero-bg.png')",
       }} >
-      <div className="absolute inset-0 flex items-center">
+      <div className="absolute mt-10 inset-0 flex items-center">
         <div className="w-full max-w-[1100px] h-auto mx-auto mt-12 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 p-6 sm:p-8 md:p-10 rounded-2xl"
           style={{
             background: "linear-gradient(to bottom, #FFFCDF, #FFF36F)",
