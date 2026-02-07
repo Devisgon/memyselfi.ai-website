@@ -65,7 +65,7 @@ const MonthlyCalendar: FC = () => {
       {/* RIGHT IMAGE */}
  <Hovering> <div className="relative w-[500px] h-[450px] mb-9">
    <Image
-     src="/Smart-ai-calendar/Monthly.png"
+     src="/Smart-ai-calendar/monthly.png"
      alt="monthly Calendar Preview"
      fill
      className="object-contain drop-shadow-[0_0_40px_rgba(255,239,67,0.8)]"
