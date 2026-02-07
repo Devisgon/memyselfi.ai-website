@@ -23,7 +23,7 @@ export const WhyMatters = () => {
       />
     </div>
 
-<div className="w-full md:w-1/2 pr-20">
+<div className="w-full md:w-1/2 md:pr-20">
  <SlideLeft> <h1 className="text-4xl font-bold mb-4">
     Why  It Matters
   </h1></SlideLeft>

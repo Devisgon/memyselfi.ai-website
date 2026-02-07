@@ -36,7 +36,7 @@ export const ProductivityGain = () => {
           className="
           flex flex-col
           lg:flex-row lg:items-center
-          gap-6 lg:gap-16
+          gap-10 lg:gap-16
           h-full
         "
         >
@@ -45,11 +45,11 @@ export const ProductivityGain = () => {
           <div className="hidden lg:block lg:w-1/3" />
 
           <SlideLeft>
-            <div className="text-black">
+            <div className="text-black ml-24 md:-mt-20">
 
               {/* heading */}
               <h2 className="
-                text-2xl
+                text-3xl 
                 sm:text-3xl
                 lg:text-5xl
                 font-bold
